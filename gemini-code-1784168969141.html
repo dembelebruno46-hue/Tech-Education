@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="B-TECH ÉDUCATION - Livres PDF Mali, fiches pédagogiques APC, assistance scolaire à domicile et documents scolaires à télécharger.">
+    <title>B-TECH ÉDUCATION | Ressources Éducatives</title>
+    <style>
+        /* Variables CSS (Couleurs) */
+        :root {
+            --primary-blue: #0A3D91;
+            --secondary-green: #4CAF50;
+            --bg-light: #F4F7F6;
+            --text-dark: #333333;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Mode Sombre Automatique */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-light: #1a1a1a;
+                --text-dark: #f0f0f0;
+                --white: #2d2d2d;
+                --primary-blue: #4fa3ff;
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
+
+        /* En-tête */
+        header { background-color: var(--white); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: var(--shadow); position: sticky; top: 0; z-index: 100;}
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-blue); }
+        nav a { text-decoration: none; color: var(--text-dark); margin-left: 1.5rem; font-weight: 500; }
+        nav a:hover { color: var(--secondary-green); }
+
+        /* Bannière Héro */
+        .hero { background: linear-gradient(135deg, var(--primary-blue), #1e5bbd); color: #fff; text-align: center; padding: 5rem 2rem; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+        .btn { padding: 10px 25px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; text-decoration: none; display: inline-block; transition: transform 0.3s ease; }
+        .btn-primary { background-color: var(--secondary-green); color: white; margin-right: 10px; }
+        .btn-secondary { background-color: white; color: var(--primary-blue); }
+        .btn:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+
+        /* Grille Produits Populaires */
+        .section-title { text-align: center; margin: 3rem 0 2rem; color: var(--primary-blue); }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 0 5%; }
+        .product-card { background: var(--white); border-radius: 10px; padding: 20px; text-align: center; box-shadow: var(--shadow); transition: transform 0.3s; }
+        .product-card:hover { transform: translateY(-10px); }
+        .product-img { width: 100%; height: 200px; background-color: #ddd; border-radius: 5px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; }
+        .product-price { font-size: 1.5rem; color: var(--secondary-green); font-weight: bold; margin: 10px 0; }
+
+        /* Pied de page */
+        footer { background-color: var(--white); margin-top: 3rem; padding: 2rem 5%; text-align: center; box-shadow: 0 -4px 6px rgba(0,0,0,0.05); }
+        .footer-info p { margin: 5px 0; font-weight: 500; }
+        .footer-info span { color: var(--primary-blue); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">B-TECH ÉDUCATION</div>
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">Catégories</a>
+            <a href="#">Mon Compte</a>
+            <a href="#">Panier</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Téléchargez instantanément vos livres, PDF et fiches scolaires</h1>
+        <p>Ressources éducatives optimisées pour les élèves et enseignants d'Afrique de l'Ouest.</p>
+        <div>
+            <a href="#boutique" class="btn btn-primary">Acheter maintenant</a>
+            <a href="#categories" class="btn btn-secondary">Voir les catégories</a>
+        </div>
+    </section>
+
+    <h2 class="section-title" id="boutique">Produits Populaires</h2>
+    <div class="product-grid">
+        <!-- Produit 1 -->
+        <div class="product-card">
+            <div class="product-img">📚 Image Couverture</div>
+            <h3>Fiches Pédagogiques APC</h3>
+            <p>Niveau Fondamental - Mathématiques</p>
+            <div class="product-price">2 500 FCFA</div>
+            <button class="btn btn-primary">Acheter (Mobile Money)</button>
+        </div>
+        <!-- Produit 2 -->
+        <div class="product-card">
+            <div class="product-img">📘 Image Couverture</div>
+            <h3>Exercices Corrigés PC</h3>
+            <p>Sciences Physiques - Terminale</p>
+            <div class="product-price">1 500 FCFA</div>
+            <button class="btn btn-primary">Acheter (Mobile Money)</button>
+        </div>
+        <!-- Produit 3 -->
+        <div class="product-card">
+            <div class="product-img">📖 Image Couverture</div>
+            <h3>Livre Numérique (eBook)</h3>
+            <p>Guide d'assistance scolaire à domicile</p>
+            <div class="product-price">3 000 FCFA</div>
+            <button class="btn btn-primary">Acheter (Mobile Money)</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p>📱 WhatsApp : <span>+223 64 13 81 70</span></p>
+            <p>🟠 Orange Money : <span>+223 71 87 10 59</span></p>
+            <p>🌊 Wave : <span>+223 64 13 81 70</span></p>
+            <p>✉️ Email : contact@btech-education.com</p>
+        </div>
+        <p style="margin-top: 15px; font-size: 0.9rem; color: #777;">
+            © 2026 B-TECH ÉDUCATION. Paiements sécurisés via CinetPay en Afrique de l'Ouest.
+        </p>
+    </footer>
+
+</body>
+</html>
